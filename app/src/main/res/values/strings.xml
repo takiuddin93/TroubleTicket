@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Trouble Tickets</string>
+    <string name="arrow_dropdown">arrow drop down</string>
+    <string name="fullName">Full Name</string>
+    <string name="userPhone">Phone</string>
+    <string name="userEmail">Email</string>
+    <string name="complaintType">Complaint Type</string>
+    <string name="userName">User</string>
+    <string name="userPassword">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="userMessage">Message</string>
+    <string name="submit">Submit</string>
+    <string name="login">Login</string>
+    <string name="comp">Create complaint</string>
+    <string name="signup">Don\'t have an account?</string>
+    <string name="signed">Already signed up?</string>
+    <string name="accountRegister">Account Register</string>
+    <string name="menu_settings">Settings</string>
+
+    // preference
+    <string name="preferenceFile">tawhidnoor.com.troubleticket.preferenceFile</string>
+    <string name="preferenceLoginStatus">tawhidnoor.com.troubleticket.preferenceLoginStatus</string>
+    <string name="preferenceRole">tawhidnoor.com.troubleticket.preferenceRole</string>
+    <string name="preferenceUsername">tawhidnoor.com.troubleticket.preferenceUsername</string>
+    <string name="preferenceId">tawhidnoor.com.troubleticket.preferenceId</string>
+    <string name="preferencePhone">tawhidnoor.com.troubleticket.preferencePhone</string>
+    <string name="preferenceAdminToken">tawhidnoor.com.troubleticket.preferenceAdminToken</string>
+    <string name="preferencePassword">tawhidnoor.com.troubleticket.preferencePassword</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/createComplaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/accountRegister"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.090" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.548">
+
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/fullName"
+                android:inputType="textPersonName"
+                android:padding="6dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/userPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fullName"
+                android:layout_alignStart="@+id/fullName"
+                android:layout_below="@+id/fullName"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/userPhone"
+                android:inputType="phone"
+                android:padding="6dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/userPhone"
+                android:layout_alignStart="@+id/userPhone"
+                android:layout_below="@+id/userPhone"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/userEmail"
+                android:inputType="textEmailAddress"
+                android:padding="6dp"
+                android:textAlignment="center" />
+
+            <AutoCompleteTextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/userEmail"
+                android:layout_alignStart="@+id/userEmail"
+                android:layout_below="@+id/userEmail"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/userName"
+                android:inputType="text"
+                android:padding="6dp"
+                android:textAlignment="center" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/arrowDropdown"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@+id/userName"-->
+                <!--android:layout_alignEnd="@+id/userName"-->
+                <!--android:layout_alignRight="@+id/userName"-->
+                <!--android:layout_alignTop="@+id/userName"-->
+                <!--android:contentDescription="@string/arrow_dropdown"-->
+                <!--android:padding="6dp"-->
+                <!--android:textAlignment="center" />-->
+
+            <EditText
+                android:id="@+id/userPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/userName"
+                android:layout_alignStart="@+id/userName"
+                android:layout_below="@+id/userName"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/userPassword"
+                android:inputType="textPassword"
+                android:padding="6dp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="161dp"
+                android:layout_height="69dp"
+                android:layout_below="@+id/userPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="@string/submit"
+                android:textColor="#464b54"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/alreadyRegistered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/signed"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+
