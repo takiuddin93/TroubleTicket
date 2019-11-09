@@ -1,4 +1,4 @@
-package tawhidnoor.com.troubleticket.Service;
+package takiuddin93.com.troubleticket.Service;
 
 import android.annotation.SuppressLint;
 import android.app.Notification;
@@ -18,7 +18,7 @@ import com.google.firebase.messaging.RemoteMessage;
 
 import java.util.Map;
 
-import tawhidnoor.com.troubleticket.R;
+import takiuddin93.com.troubleticket.R;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
     int count;
@@ -75,7 +75,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         String title = data.get("title");
         String content = data.get("content");
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        String NOTIFICATION_CHANNEL_ID = "PlusEqualsTo";
+        String NOTIFICATION_CHANNEL_ID = "TroubleTicket";
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             @SuppressLint("WrongConstant")
             NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID,
